@@ -86,6 +86,7 @@ const Info = ({ color, header, details, image, hasButton }) => {
 								delay: 0.3,
 								type: 'spring',
 							}}
+							loading="lazy"
 							viewport={{ once: true }}
 							src={require(`../assets/images/${image}.jpg`)}
 							alt={header}
