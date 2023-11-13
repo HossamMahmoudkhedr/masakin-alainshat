@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from '@mui/material';
 import React from 'react';
 import CustomButton from './customButton';
+import { motion } from 'framer-motion';
 const HeroSection = ({ image }) => {
 	return (
 		<Box
@@ -25,6 +26,11 @@ const HeroSection = ({ image }) => {
 				}}></Box>
 			<Stack
 				spacing={3}
+				component={motion.div}
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 2, delay: 0.5, type: 'spring' }}
+				viewport={{ once: true }}
 				sx={{
 					position: 'absolute',
 					left: '50%',
@@ -38,15 +44,17 @@ const HeroSection = ({ image }) => {
 					<Typography
 						variant="h1"
 						fontWeight="600"
-						color="white">
+						color="white"
+						textAlign="center"
+						fontSize={{ xs: '2rem', md: '6rem' }}>
 						مساكن الانشاءات للمقاولات
 					</Typography>
 					<Typography
 						variant="body1"
 						textAlign="center"
-						fontSize="1.2rem"
+						fontSize={{ xs: '1rem', md: '1.2rem' }}
 						color="white"
-						width="41rem">
+						width={{ xs: '90%', md: '72%' }}>
 						نحن لسنا مجرد مقاولون، بل شركاء في تحويل رؤيتك إلى واقع ملموس، نبني
 						بجودة واهتمام فائق لضمان بنية قوية وتصميم فريد يعكس هويتك
 					</Typography>

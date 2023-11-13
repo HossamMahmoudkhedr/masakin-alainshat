@@ -1,11 +1,17 @@
 import { Box, Stack, Typography } from '@mui/material';
 import React from 'react';
 import SubHeader from './subHeader';
+import { motion } from 'framer-motion';
 
 //
 const Card = ({ title, content, icon, contentColor }) => {
 	return (
 		<Box
+			component={motion.div}
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 1, delay: 1 }}
+			viewport={{ once: true }}
 			sx={{
 				background:
 					'linear-gradient(123deg, #092043 5.83%, rgba(9, 113, 183, 0.69) 94.9%)',

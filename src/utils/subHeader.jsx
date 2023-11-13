@@ -5,7 +5,7 @@ const SubHeader = ({ text, color, weight }) => {
 	return (
 		<Typography
 			variant="body2"
-			fontSize="1.5rem"
+			fontSize={{ xs: '1.2rem', md: '1.5rem' }}
 			color={color || 'var(--sub-header-color)'}
 			fontWeight={weight || '400'}>
 			{text}

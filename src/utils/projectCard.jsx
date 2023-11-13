@@ -30,10 +30,12 @@ const HoveringBox = styled(Box)`
 
 const ProjectCard = ({ image, text }) => {
 	return (
+		// 	width: 314px;
+		// height: 325px;
 		<HoveringBox
 			position="relative"
-			width="362px"
-			height="358px">
+			width={{ xs: '314px', md: '362px' }}
+			height={{ xs: '325px', md: '358px' }}>
 			<img
 				style={{ width: '100%', height: '100%', objectFit: 'cover' }}
 				src={require(`../assets/images/${image}.jpg`)}

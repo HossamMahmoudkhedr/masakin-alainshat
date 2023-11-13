@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from '@mui/material';
 import React from 'react';
 import Header from './header';
+import { motion } from 'framer-motion';
 
 const MiddleAD = ({ header, content, image }) => {
 	return (
@@ -29,8 +30,14 @@ const MiddleAD = ({ header, content, image }) => {
 					opacity: '0.52',
 				}}></Box>
 			<Stack
+				component={motion.div}
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 3, delay: 1, type: 'spring' }}
+				viewport={{ once: true }}
 				spacing={2}
 				position="relative"
+				alignItems="center"
 				zIndex="1"
 				textAlign="center">
 				<Header
@@ -40,7 +47,7 @@ const MiddleAD = ({ header, content, image }) => {
 				<Typography
 					variant="body1"
 					color="white"
-					width="418px">
+					width={{ xs: '95%', md: '30%' }}>
 					{content}
 				</Typography>
 			</Stack>

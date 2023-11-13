@@ -6,7 +6,9 @@ import { services } from '../data/servicesData';
 
 const Services = () => {
 	return (
-		<Box marginBottom="3rem">
+		<Box
+			marginBottom="3rem"
+			id="services">
 			<Heading
 				headerText="خدماتنا"
 				subText="تكامل الخدمات لدينا يضمن تحقيق رؤيتك بدقة واحترافية"
