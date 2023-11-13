@@ -79,7 +79,7 @@ const Info = ({ color, header, details, image, hasButton }) => {
 						<div></div>
 						<StyledImage
 							as={motion.img}
-							initial={{ opacity: 0, y: 50 }}
+							initial={{ opacity: 0, y: 100 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{
 								duration: 1,
