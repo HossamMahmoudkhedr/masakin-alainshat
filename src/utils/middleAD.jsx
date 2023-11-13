@@ -33,7 +33,7 @@ const MiddleAD = ({ header, content, image }) => {
 				component={motion.div}
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				transition={{ duration: 3, delay: 1, type: 'spring' }}
+				transition={{ duration: 2, delay: 0.5, type: 'spring' }}
 				viewport={{ once: true }}
 				spacing={2}
 				position="relative"

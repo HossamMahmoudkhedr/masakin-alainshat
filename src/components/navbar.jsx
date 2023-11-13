@@ -29,8 +29,9 @@ const StyledList = styled.ul`
 		flex-direction: column;
 
 		align-items: center;
-		width: inherit;
-		transition: inherit;
+		// width: inherit;
+		// transition: inherit;
+		// transition-delay: 0.3s;
 		& li {
 			display: none;
 		}
@@ -85,19 +86,21 @@ const StyledNavLink = styled(NavLink)`
 const ResponsiveMenu = styled.div`
 	@media (max-width: 768px) {
 		position: absolute;
+		display: none;
 		left: 0;
 		top: 0;
 		background: #bbb;
 		color: black;
 		height: 100vh;
-		width: 0;
-		display: flex;
+		width: 70%;
+		// width: 0;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 		transition: all 0.2s linear;
+
 		&.active {
-			width: 70%;
+			display: flex;
 			padding: 7rem 5rem;
 		}
 
@@ -124,6 +127,8 @@ const ResponsiveBox = styled(Box)`
 
 const StyledClose = styled.span`
 	display: none;
+	transition: inherit;
+	transition-delay: 0.3s;
 	@media (max-width: 768px) {
 		display: ${(props) => (props.active ? 'block' : 'none')};
 		position: absolute;
