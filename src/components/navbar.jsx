@@ -90,7 +90,7 @@ const StyledNavLink = styled(NavLink)`
 
 const ResponsiveMenu = styled.div`
 	@media (max-width: 768px) {
-		position: absolute;
+		position: fixed;
 		display: none;
 		left: 0;
 		top: 0;
@@ -119,8 +119,8 @@ const ResponsiveBox = styled(Box)`
 	color: white;
 	@media (max-width: 768px) {
 		color: black;
-		position: absolute;
-		bottom: -80vh;
+		position: fixed;
+		bottom: 10vh;
 		left: 10px;
 		color: black;
 		display: none;
@@ -165,7 +165,7 @@ const Navbar = () => {
 				sx={{
 					display: active ? 'block' : 'none',
 					cursor: 'pointer',
-					position: 'absolute',
+					position: 'fixed',
 					left: '0',
 					top: '0',
 					width: '100%',
