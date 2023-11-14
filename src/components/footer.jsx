@@ -147,13 +147,13 @@ const Footer = () => {
 					href="https://hossam-mahmoud-portfolio.vercel.app/"
 					target="_blank"
 					rel="noreferrer">
-					&copy; تصميم وبرمجة {year}- {'  '}
+					&copy; تصميم وبرمجة {year} - {'  '}
 					<motion.span
 						initial={{ color: 'white' }}
 						whileHover={{ color: '#ff9a8d' }}
 						style={{
 							color: 'white',
-							marginRight: '4px',
+							marginRight: '1px',
 							fontFamily: 'fantasy',
 						}}>
 						Hossam Mahmoud
