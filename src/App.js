@@ -10,6 +10,7 @@ import RootLayout from './pages/rootLayout';
 import About from './components/about';
 import Projects from './components/projects';
 import Contact from './components/contact';
+import Error from './components/error';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -32,7 +33,10 @@ const router = createBrowserRouter(
 				path="/contact"
 				element={<Contact />}
 			/>
-			{/* <Route path='*' element={<Error />} /> */}
+			<Route
+				path="*"
+				element={<Error />}
+			/>
 		</Route>
 	)
 );
