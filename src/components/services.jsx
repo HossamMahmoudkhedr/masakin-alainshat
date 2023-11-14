@@ -20,6 +20,7 @@ const Services = () => {
 				gap={4}>
 				{services.map((service) => (
 					<Grid
+						key={parseInt(service.id)}
 						item
 						lg="3"
 						md="4"

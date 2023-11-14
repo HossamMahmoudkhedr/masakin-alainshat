@@ -38,7 +38,7 @@ const Info = ({ color, header, details, image, direction, hasButton }) => {
 	return (
 		<Box padding={{ xs: '3rem 1rem', md: '3rem', lg: '3rem 6rem' }}>
 			<Stack
-				direction={{ xs: 'column', md: direction }}
+				direction={{ xs: 'column-reverse', md: direction }}
 				gap={{ xs: '2rem', md: 'unset' }}
 				alignItems="center"
 				justifyContent="space-between"

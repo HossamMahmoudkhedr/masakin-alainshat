@@ -2,7 +2,7 @@ import { Box, Stack, Typography } from '@mui/material';
 import React from 'react';
 import CustomButton from './customButton';
 import { motion } from 'framer-motion';
-const HeroSection = ({ image }) => {
+const HeroSection = ({ image, position }) => {
 	return (
 		<Box
 			sx={{
@@ -10,7 +10,7 @@ const HeroSection = ({ image }) => {
 				height: '100vh',
 				backgroundImage: `url(${require(`../assets/images/${image}.jpg`)})`,
 				backgroundRepeat: 'no-repeat',
-				backgroundPosition: 'center',
+				backgroundPosition: position || 'center',
 				backgroundSize: 'cover',
 			}}>
 			<Box
@@ -60,7 +60,7 @@ const HeroSection = ({ image }) => {
 					</Typography>
 				</Stack>
 				<CustomButton
-					to="/"
+					to="mailto:info@msakenn.com"
 					text="تواصل معنا"
 					bgColor="var(--light-blue) "
 				/>

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 const transitionStyles = `
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 `;
 const colorStyles = `
     color: var(--yellow);
@@ -52,6 +52,10 @@ const StyledNavLink = styled(NavLink)`
 		fill: white;
 		${transitionStyles}
 	}
+	&.active svg {
+		fill: var(--yellow);
+	}
+
 	&&:hover {
 		${colorStyles}
 		width: 100%;
@@ -61,7 +65,8 @@ const StyledNavLink = styled(NavLink)`
 		fill: var(--yellow);
 	}
 
-	&&:hover::before {
+	&&:hover::before,
+	&&.active::before {
 		background-color: var(--yellow);
 	}
 	&::before {

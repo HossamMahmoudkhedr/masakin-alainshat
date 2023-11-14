@@ -15,7 +15,7 @@ const StyledBox = styled(Box)`
 	display: flex;
 	align-items: center;
 	padding: 0 1rem;
-	transition: all 0.3s linear;
+	transition: all 0.2s linear;
 `;
 
 const HoveringBox = styled(Box)`

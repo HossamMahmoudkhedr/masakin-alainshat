@@ -9,6 +9,7 @@ import HomePage from './components/homePage';
 import RootLayout from './pages/rootLayout';
 import About from './components/about';
 import Projects from './components/projects';
+import Contact from './components/contact';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -26,6 +27,10 @@ const router = createBrowserRouter(
 			<Route
 				path="/projects"
 				element={<Projects />}
+			/>
+			<Route
+				path="/contact"
+				element={<Contact />}
 			/>
 			{/* <Route path='*' element={<Error />} /> */}
 		</Route>

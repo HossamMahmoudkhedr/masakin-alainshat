@@ -52,7 +52,7 @@ const ContactComponent = () => {
 				</li>
 				<li>
 					<StyledItems
-						href="https://maps.app.goo.gl/AVBFqdycFMksdcry7"
+						href="https://maps.app.goo.gl/ztHkGQRgJF5L19QPA"
 						target="_blank"
 						rel="noreferrer">
 						{icons.location} حي ظهرة لبن الرياض، السعودية

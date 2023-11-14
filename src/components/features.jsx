@@ -18,6 +18,7 @@ const Features = () => {
 				gap={4}>
 				{features.map((feature) => (
 					<Grid
+						key={parseInt(feature.id)}
 						item
 						lg="3"
 						md="4"

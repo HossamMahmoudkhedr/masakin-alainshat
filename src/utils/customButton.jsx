@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledButton = styled(Button)`
 	&&:hover {
-		background-color: ${(props) => props.bgColor};
+		background-color: ${(props) => props.bgcolor};
 		filter: brightness(10px);
 	}
 `;
@@ -13,7 +13,7 @@ const CustomButton = ({ text, bgColor, to, color }) => {
 	return (
 		<NavLink to={to}>
 			<StyledButton
-				bgColor={bgColor}
+				bgcolor={bgColor}
 				variant="contained"
 				sx={{
 					borderRadius: '5px',

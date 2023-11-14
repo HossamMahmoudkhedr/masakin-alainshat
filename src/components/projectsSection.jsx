@@ -45,6 +45,7 @@ const ProjectsSection = () => {
 				gap={{ xs: '5rem', lg: '2rem' }}>
 				{projects.slice(0, 3).map((project) => (
 					<ProjectCard
+						key={parseInt(project.id)}
 						image={project.image}
 						text={project.content}
 					/>

@@ -12,7 +12,10 @@ const Projects = () => {
 	}, []);
 	return (
 		<div>
-			<HeroSection image="josue-isai-ramos-figueroa-Pj4je7OjrME-unsplash" />
+			<HeroSection
+				image="josue-isai-ramos-figueroa-Pj4je7OjrME-unsplash"
+				position="right"
+			/>
 			<Heading
 				headerText="مشاريعنا"
 				subText="في عالم المقاولات، نرسم مشاريعنا بلغة الإبداع ونبنيها بجودة تحدث تحولًا في المستقبل"
@@ -30,6 +33,7 @@ const Projects = () => {
 				gap={{ xs: '5rem' }}>
 				{projects.map((project) => (
 					<ProjectCard
+						key={parseInt(project.id)}
 						image={project.image}
 						text={project.content}
 					/>
