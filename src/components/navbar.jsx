@@ -201,23 +201,51 @@ const Navbar = () => {
 						</StyledClose>
 						<StyledList>
 							<li>
-								<NavLink to="/">الرئيسية</NavLink>
+								<NavLink
+									onClick={() => {
+										setActive(false);
+									}}
+									to="/">
+									الرئيسية
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/about">من نحن</NavLink>
+								<NavLink
+									onClick={() => {
+										setActive(false);
+									}}
+									to="/about">
+									من نحن
+								</NavLink>
 							</li>
 							<li>
-								<a href="/#services">خدماتنا</a>
+								<a
+									onClick={() => {
+										setActive(false);
+									}}
+									href="/#services">
+									خدماتنا
+								</a>
 							</li>
 							<li>
-								<NavLink to="/projects">مشاريعنا</NavLink>
+								<NavLink
+									onClick={() => {
+										setActive(false);
+									}}
+									to="/projects">
+									مشاريعنا
+								</NavLink>
 							</li>
 						</StyledList>
 					</ResponsiveMenu>
 					<ResponsiveBox
 						width="100px"
 						className={active ? 'active' : ''}>
-						<StyledNavLink to="/contact">
+						<StyledNavLink
+							onClick={() => {
+								setActive(false);
+							}}
+							to="/contact">
 							اتصل بنا{icons.leftArrow}
 						</StyledNavLink>
 					</ResponsiveBox>
