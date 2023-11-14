@@ -34,11 +34,11 @@ const StyledBox = styled(Box)`
 	}
 `;
 
-const Info = ({ color, header, details, image, hasButton }) => {
+const Info = ({ color, header, details, image, direction, hasButton }) => {
 	return (
 		<Box padding={{ xs: '3rem 1rem', md: '3rem', lg: '3rem 6rem' }}>
 			<Stack
-				direction={{ xs: 'column', md: 'row' }}
+				direction={{ xs: 'column', md: direction }}
 				gap={{ xs: '2rem', md: 'unset' }}
 				alignItems="center"
 				justifyContent="space-between"
@@ -61,7 +61,7 @@ const Info = ({ color, header, details, image, hasButton }) => {
 							lineHeight: '23px',
 							letterSpacing: '0.32px',
 							color: { color },
-							width: { xs: '100%', md: '85%' },
+							width: { xs: '100%', md: '87%' },
 						}}>
 						{details}
 					</Typography>

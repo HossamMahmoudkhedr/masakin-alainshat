@@ -7,6 +7,12 @@ import { ReactComponent as Whatsapp } from '../assets/icons/whatsapp 1.svg';
 import { ReactComponent as Mail } from '../assets/icons/envelope-solid.svg';
 import { ReactComponent as Close } from '../assets/icons/xmark-solid.svg';
 import { ReactComponent as Menu } from '../assets/icons/bars-solid.svg';
+import { ReactComponent as Clock } from '../assets/icons/Frame 1.svg';
+import { ReactComponent as Certificate } from '../assets/icons/certificate-solid.svg';
+import { ReactComponent as Rank } from '../assets/icons/ranking-star-solid.svg';
+import { ReactComponent as Hands } from '../assets/icons/handshake-solid.svg';
+import { ReactComponent as City } from '../assets/icons/city-solid 1.svg';
+import { ReactComponent as Tools } from '../assets/icons/screwdriver-wrench-solid 1.svg';
 
 export const icons = {
 	Logo: <Logo />,
@@ -18,4 +24,10 @@ export const icons = {
 	mail: <Mail />,
 	close: <Close />,
 	menu: <Menu />,
+	clock: <Clock />,
+	certificate: <Certificate />,
+	rank: <Rank />,
+	hands: <Hands />,
+	city: <City />,
+	tools: <Tools />,
 };

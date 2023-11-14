@@ -202,7 +202,7 @@ const Navbar = () => {
 								<NavLink to="/about">من نحن</NavLink>
 							</li>
 							<li>
-								<a href="#services">خدماتنا</a>
+								<a href="/#services">خدماتنا</a>
 							</li>
 							<li>
 								<NavLink to="/projects">مشاريعنا</NavLink>
