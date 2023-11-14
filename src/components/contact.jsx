@@ -75,7 +75,6 @@ const Contact = () => {
 	const sendEmail = (e) => {
 		e.preventDefault();
 
-		// add env
 		emailjs
 			.sendForm(
 				process.env.REACT_APP_SERVICE_ID,
