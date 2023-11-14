@@ -4,6 +4,7 @@ import Info from '../utils/info';
 import MiddleAD from '../utils/middleAD';
 import Services from './services';
 import ProjectsSection from './projectsSection';
+import ScrollBack from '../utils/scrollBack';
 
 const HomePage = () => {
 	useEffect(() => {
@@ -11,6 +12,7 @@ const HomePage = () => {
 	}, []);
 	return (
 		<div>
+			<ScrollBack />
 			<HeroSection image={'home-page'} />
 			<Info
 				color="var(--text-color)"

@@ -36,7 +36,7 @@ const ProjectsSection = () => {
 				component={motion.div}
 				initial={{ opacity: 0, y: 50 }}
 				whileInView={{ opacity: 1, y: 0 }}
-				transition={{ duration: 1, delay: 2, type: 'spring' }}
+				transition={{ duration: 1, delay: 1.2, type: 'spring' }}
 				viewport={{ once: true }}
 				direction="row"
 				padding="1rem 0rem 6rem 0rem"
@@ -55,7 +55,7 @@ const ProjectsSection = () => {
 				component={motion.div}
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1, delay: 2.5, type: 'spring' }}
+				transition={{ duration: 1, delay: 1.7, type: 'spring' }}
 				viewport={{ once: true }}
 				marginBottom="2rem"
 				direction={'row'}

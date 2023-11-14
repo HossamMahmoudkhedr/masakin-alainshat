@@ -13,6 +13,7 @@ import { ReactComponent as Rank } from '../assets/icons/ranking-star-solid.svg';
 import { ReactComponent as Hands } from '../assets/icons/handshake-solid.svg';
 import { ReactComponent as City } from '../assets/icons/city-solid 1.svg';
 import { ReactComponent as Tools } from '../assets/icons/screwdriver-wrench-solid 1.svg';
+import { ReactComponent as ArrowTop } from '../assets/icons/chevron-up-solid.svg';
 
 export const icons = {
 	Logo: <Logo />,
@@ -30,4 +31,5 @@ export const icons = {
 	hands: <Hands />,
 	city: <City />,
 	tools: <Tools />,
+	arrowTop: <ArrowTop />,
 };

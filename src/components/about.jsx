@@ -3,6 +3,7 @@ import HeroSection from '../utils/heroSection';
 import Info from '../utils/info';
 import MiddleAD from '../utils/middleAD';
 import Features from './features';
+import ScrollBack from '../utils/scrollBack';
 
 const About = () => {
 	useEffect(() => {
@@ -10,6 +11,7 @@ const About = () => {
 	}, []);
 	return (
 		<div>
+			<ScrollBack />
 			<HeroSection image="workers" />
 			<Info
 				color="var(--text-color)"

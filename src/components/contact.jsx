@@ -129,7 +129,7 @@ const Contact = () => {
 				direction={{ xs: 'column', lg: 'row' }}
 				justifyContent="center"
 				margin="2rem 0 5rem 0"
-				padding={{ xs: '0 10%', lg: '0' }}
+				padding={{ xs: '0 5%', md: '0 10%', lg: '0' }}
 				gap={'3rem'}>
 				<Stack
 					spacing={3}
